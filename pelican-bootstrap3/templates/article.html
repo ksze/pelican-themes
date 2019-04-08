@@ -56,6 +56,11 @@
             <ol class="breadcrumb">
                 <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
                 <li><a href="{{ SITEURL }}/{{ article.category.url }}" title="{{ article.category }}">{{ article.category }}</a></li>
+                {% if article.subcategories %}
+                {% for subcategory in article.subcategories %}
+                <li><a href="{{ SITEURL }}/{{ subcategory.url }}">{{ subcategory.shortname }}</a></li>
+                {% endfor %}
+                {% endif %}
                 <li class="active">{{ article.title }}</li>
             </ol>
         {% else %}
