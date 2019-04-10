@@ -13,14 +13,22 @@
 
                 {% if article %}
                     {% if not DISQUS_NO_ID %}
-                        this.page.identifier = '{{ article.date|strftime('%Y-%m-%d-') ~ article.slug }}';
+                        {% if article.disqus_identifier %}
+                            this.page.identifier = '{{ article.disqus_identifier }}';
+                        {% else %}
+                            this.page.identifier = '{{ article.date|strftime('%Y-%m-%d-') ~ article.slug }}';
+                        {% endif %}
                     {% endif %}
                     {% if SITEURL %}
                         this.page.url = '{{ SITEURL }}/{{ article.url }}';
                     {% endif %}
                 {% elif page %}
                     {% if not DISQUS_NO_ID %}
-                        this.page.identifier = 'page-{{ page.slug }}';
+                        {% if article.disqus_identifier %}
+                            this.page.identifier = '{{ article.disqus_identifier }}';
+                        {% else %}
+                            this.page.identifier = 'page-{{ page.slug }}';
+                        {% endif %}
                     {% endif %}
                     {% if SITEURL %}
                         this.page.url = '{{ SITEURL }}/{{ page.url }}';
