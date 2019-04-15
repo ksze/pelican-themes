@@ -2,6 +2,10 @@
   {%- if no_icon -%}
     {{ name }}
   {%- else -%}
-    <i class="fa fa-{{ icon }} fa-lg"></i><span class="icon-label">{{ name }}</span>
+    {%- if icon in ["github", "twitter"] -%}
+      <i class="fab fa-{{ icon }} fa-lg"></i><span class="icon-label">{{ name }}</span>
+    {%- else -%}
+      <i class="fa fa-{{ icon }} fa-lg"></i><span class="icon-label">{{ name }}</span>
+    {%- endif -%}
   {%- endif -%}
 {%- endmacro %}
