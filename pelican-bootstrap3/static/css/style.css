@@ -239,3 +239,13 @@ figure.floatcenter, .align-center {
 .gap-left {
   margin-left: 10px;
 }
+
+h1 {
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+}
