@@ -34,6 +34,9 @@
 [submodule "lannisport"]
 	path = lannisport
 	url = https://github.com/siovene/lannisport.git
+[submodule "Editorial"]
+	path = Editorial
+	url = https://gitlab.com/Mimoza/editorial.git
 [submodule "fresh"]
 	path = fresh
 	url = https://github.com/jsliang/pelican-fresh.git
@@ -80,9 +83,6 @@
 [submodule "storm"]
 	path = storm
 	url = https://github.com/redVi/storm.git
-[submodule "pure"]
-	path = pure
-	url = https://github.com/danclaudiupop/pure.git
 [submodule "jesuislibre"]
 	path = jesuislibre
 	url = https://github.com/badele/pelican-theme-jesuislibre.git
@@ -146,9 +146,6 @@
 [submodule "alchemy"]
 	path = alchemy
 	url = https://github.com/nairobilug/pelican-alchemy.git
-[submodule "Nuja"]
-	path = Nuja
-	url = https://github.com/allenskd/Nuja.git
 [submodule "pjport"]
 	path = pjport
 	url = https://github.com/xm3ron/pjport.git
@@ -158,9 +155,6 @@
 [submodule "Flex"]
 	path = Flex
 	url = https://github.com/alexandrevicenzi/Flex.git
-[submodule "Casper2Pelican"]
-	path = Casper2Pelican
-	url = https://github.com/abr4xas/Casper2Pelican.git
 [submodule "octopress"]
 	path = octopress
 	url = https://github.com/MrSenko/pelican-octopress-theme
@@ -227,6 +221,9 @@
 [submodule "jojo"]
 	path = jojo
 	url = https://github.com/dokelung/jojo.git
+[submodule "supersimple"]
+	path = supersimple
+	url = https://github.com/hlrossato/supersimple.git
 [submodule "resume"]
 	path = resume
 	url = https://github.com/suheb/resume.git
@@ -261,3 +258,15 @@
 [submodule "Papyrus"]
 	path = Papyrus
 	url = https://github.com/aleylara/Papyrus
+[submodule "blue-penguin-dark"]
+	path = blue-penguin-dark
+	url = https://github.com/tcarwash/blue-penguin-dark.git
+[submodule "pelican-haerwu-theme"]
+	path = pelican-haerwu-theme
+	url = https://github.com/hrw/pelican-haerwu-theme.git
+[submodule "Piccolo"]
+	path = piccolo
+	url = https://github.com/iamjameswalters/piccolo.git
+[submodule "WhatsTheScoop"]
+	path = WhatsTheScoop
+	url = git@github.com:SarahRogue81/WhatsTheScoop.git

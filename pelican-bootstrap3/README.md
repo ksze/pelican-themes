@@ -64,7 +64,8 @@ This theme honors the following standard Pelican settings:
 	* `GOOGLE_ANALYTICS` (classic tracking code)
 	* `GOOGLE_ANALYTICS_UNIVERSAL` and `GOOGLE_ANALYTICS_UNIVERSAL_PROPERTY` (Universal tracking code)
 	* `DISQUS_SITENAME`
-	* `PIWIK_URL`, `PIWIK_SSL_URL` and `PIWIK_SITE_ID`
+	* `PIWIK_URL`, `PIWIK_SSL_URL` and `PIWIK_SITE_ID` or
+	* `MATOMO_URL`, `MATOMO_SITE_ID`
 
 It uses the `tag_cloud` variable for displaying tags in the sidebar. You can
 control the amount of tags shown with: `TAG_CLOUD_MAX_ITEMS`
@@ -389,14 +390,19 @@ The footer will display a copyright message using the AUTHOR variable and the ye
 
 ### Sidebar Images
 
-Include a series of images in the sidebar, with an optional header:
+Include a series of _optionally linked_ images in the sidebar, with an optional
+header.
 
+```
 SIDEBAR_IMAGES_HEADER = 'My Images'
-SIDEBAR_IMAGES = ["/path/to/image1.png", "/path/to/image2.png"]
+SIDEBAR_IMAGES = (
+    ('/path/to/image1.png', 'https://link1'),
+    ('/path/to/image2.png', 'https://link2'),
+    ('/path/to/image2.png', ''),
+)
+```
 
-Originally developed for including certification marks in your sidebar. E.g.,
-
-http://dmark.github.io
+Originally developed for including certification marks in your sidebar.
 
 ### Translations
 
